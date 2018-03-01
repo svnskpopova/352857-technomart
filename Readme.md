@@ -1,7 +1,7 @@
 # Личный проект «Техномарт»
 
 * Студент: [Светлана Попова](https://up.htmlacademy.ru/htmlcss/20/user/352857).
-* Наставник: `Неизвестно`.
+* Наставник: [Артем Рожков](https://htmlacademy.ru/profile/artrozhe).
 
 ---
 
