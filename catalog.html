@@ -59,16 +59,18 @@
         <form class="catalog-filters" action="http://echo.htmlacademy.ru" method="get">
           <fieldset>
             <legend>Цена:</legend>
-            <div class="price-filter">
-              <input type="range" name="price-filter" id="price-field" min="0" max="30000" step="1">
-              <label for="price-field" class="visually-hidden">Цена</label>
+<!--           фильтр по цене-->
+            <div class="range-controls"> 
+              <div class="scale"> 
+                <div class="bar"></div> 
+              </div> 
+             <div class="toggle min-toggle"></div> 
+             <div class="toggle max-toggle"></div> 
             </div>
             <div class="price-filter">
-             <output name="mix-price" for="price-filter">0</output>
-            </div>
-            <span>-</span>
-            <div class="price-filter">
-             <output name="max-price" for="price-filter">30000</output>
+             <input type="text" name="min-price" id="min-price" value="0">
+             <span>-</span>
+             <input type="text" name="man-price" id="man-price" value="30000">
             </div>
           </fieldset>
           <fieldset>
