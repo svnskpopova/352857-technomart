@@ -39,10 +39,6 @@
               <label for="search-form">Поиск:</label>
               <input type="search" id="search-form" name="search-form">
             </div>
-            <div class="search-item">
-              <label for="search-button" class="visually-hidden">Найти</label>
-              <input type="submit" id="search-button" name="search-button">
-            </div>
           </form>
           <a class="tab" href="tab.html">Закладки:0</a>
           <a class="cart" href="cart.html">Корзина:0</a>
@@ -324,16 +320,13 @@
           <label for="letter-field">Текст письма:</label>
           <textarea id="letter-field" name="letter-field" rows="6" placeholder="В свободной форме"></textarea>
         </div>
-        <div class="write-us-item">
-          <label for="send-button" class="visually-hidden">Отправить</label>
-          <input type="submit" id="send-button" name="send-button" value="Отправить">
-        </div>
+        <button class="button-write-us" type="submit">Отправить</button>
       </form>
-      <button class="modal-close" type="button" aria-label="Закрыть"></button>
+      <button class="modal-close" type="button" aria-label="Закрыть форму Напишите нам"></button>
     </section>
     <section class="modal-map">
       <h2 class="visually-hidden">Как доехать</h2>
-      <button class="modal-close" type="button" aria-label="Закрыть"></button>
+      <button class="modal-close" type="button" aria-label="Закрыть карту"></button>
     </section>
   </body>
 </html>
