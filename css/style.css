@@ -377,6 +377,9 @@ li.popular-item:focus .goods-actions {
   line-height: 18px;
   background-color: #293449;
 }
+.background-write-us {
+  background-color: #f4f4f4;
+}
 .social-list {
   list-style: none;
   text-align: center;
@@ -384,4 +387,34 @@ li.popular-item:focus .goods-actions {
 .email-feedback,
 .developer-button {
   color: #ffd180;
+}
+.email-feedback:hover,
+.developer-button:hover,
+.email-feedback:focus,
+.developer-button:focus {
+  text-decoration: underline;
+}
+
+.email-feedback:active,
+.developer-button:active {
+  color: #ac3545;
+  text-decoration: none;
+}
+
+.modal-write-us {
+  font-size: 18px;
+  line-height: 18px;
+  color: #000000;
+  background-color: #ffffff;
+}
+.write-us input,
+.write-us textarea {
+  font-family: "PTSans";
+  font-size: 13px;
+  line-height: 18px;
+  color: #a9a9a9;
+}
+.button-write-us {
+  font: inherit;
+  border: none;
 }
