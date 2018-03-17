@@ -96,11 +96,13 @@ a {
   font-size: 21px;
   line-height: 21px;
   color: #ee3643;
+  text-align: center;
 }
 .main-adress {
   font-size: 14px;
   line-height: 24px;
   color: #32425c;
+  text-align: center;
 }
 .user-navigation a {
   font-size: 21px;
@@ -130,4 +132,33 @@ a.offer-button:active {
 }
 .main-header-logo:active {
   background-color: #ba2732;
+}
+.user-navigation a:hover,
+.user-navigation a:focus {
+  color: #ee3643;
+}
+.user-navigation a:active {
+  opacity: 0.3;
+  color: #000000;
+}
+.site-navigation a:hover,
+.site-navigation a:focus {
+  background-color: #293449;
+}
+.site-navigation a:active {
+  opacity: 0.5;
+  background-color: #1d2739;
+}
+.header-search input {
+  font: inherit;
+  background-color: #293449;
+  border-color: #293449;
+}
+.header-search input:hover {
+  background-color: #212a3a;
+  border-color: #212a3a;
+}
+.header-search input:focus {
+  background-color: #ffffff;
+  border-color: #ffffff;
 }
