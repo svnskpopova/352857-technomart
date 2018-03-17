@@ -3,9 +3,22 @@
   <head>
     <meta charset="utf-8">
     <title>Интернет-магазин "Техномарт"</title>
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
+      <div class="header-top">
+          <form class="header-search" action="http://echo.htmlacademy.ru" method="post">
+            <div class="search-item">
+              <label for="search-form" aria-label="Поиск"></label>
+              <input type="search" id="search-form" name="search-form" placeholder="Поиск:">
+            </div>
+          </form>
+          <a class="tab" href="tab.html">Закладки:0</a>
+          <a class="cart" href="cart.html">Корзина:0</a>
+          <a class="offer-button" href="offer-page.html">Оформить заказ</a>
+      </div>
       <div class="header-middle">
         <h1 class="header-title">Интернет-магазин строительных материалов и инструмента для ремонта</h1>
         <div class="header-contacts">
@@ -33,17 +46,7 @@
             <li><a href="contacts.html">Контакты</a></li>
           </ul>
         </nav>
-        <div class="header-top">
-          <form class="header-search" action="http://echo.htmlacademy.ru" method="post">
-            <div class="search-item">
-              <label for="search-form" aria-label="Поиск"></label>
-              <input type="search" id="search-form" name="search-form" placeholder="Поиск:">
-            </div>
-          </form>
-          <a class="tab" href="tab.html">Закладки:0</a>
-          <a class="cart" href="cart.html">Корзина:0</a>
-          <a class="offer-button" href="offer-page.html">Оформить заказ</a>
-        </div>
+        
       </header>
       <main class="container">
         <section class="menu-containers">
