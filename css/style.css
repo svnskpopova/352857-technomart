@@ -48,7 +48,8 @@ a {
   text-decoration: none;
   
 }
-.main-header {
+.main-header,
+.main-service {
   background-color: #f3f7f8;
   background-image: url(img/background-header.jpg);
   background-position: top center;
@@ -161,4 +162,211 @@ a.offer-button:active {
 .header-search input:focus {
   background-color: #ffffff;
   border-color: #ffffff;
+}
+.section-button {
+  color: #ffffff;
+  background-color: #e5e5e5;
+  text-transform: uppercase;
+}
+.section-button:hover,
+.section-button:focus {
+  background-color: #cccccc;
+}
+.section-button:active {
+  background-color: #b2b2b2;
+}
+}
+.menu-containers h3 {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: bold;
+}
+.section-materials {
+  background-color: #ffbf47;
+}
+.section-tool {
+  background-color: #3bbce3;
+}
+.section-tech {
+  background-color: #dc91d8;
+}
+.section-sale {
+  background-color: #8ed78f;
+}
+.section-delivery {
+  background-color: #ffc047;
+}
+.button {
+  color: #ffffff;
+  background-color: #ee3643;
+  text-transform: uppercase;
+}
+.button:hover,
+.button:focus {
+  background-color: #ca2c37;
+}
+button:active {
+  background-color: #ba2732;
+}
+.popular-head {
+  background-color: #f9f5f0;
+}
+.popular-title,
+.main-service-title,
+.about-company-title,
+.contacts-title {
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: #32425c;
+}
+.goods-name {
+  font-family: "PTSans";
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: bold;
+  color: #000000;
+}
+.goods-old-price {
+  font-family: "PTSans";
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #a9a9a9;
+  text-decoration: line-through;
+}
+.goods-price {
+  font-family: "PTSans";
+  font-weight: bold;
+  color: #ffffff;
+  text-transform: uppercase;
+  background-color: #ee3643;
+}
+.goods-price:hover,
+.goods-price:focus {
+  background-color: #ca2c37;
+}
+.goods-price:active {
+  background-color: #ba2732;
+}
+/*li.popular-item:hover .goods-actions,
+li.popular-item:focus .goods-actions {
+  display: block;
+}*/
+/* сделать тени и изменение карточки при наведении*/
+.goods-actions-buy {
+  color: #ffffff;
+  text-transform: uppercase;
+  background-color: #63a63e;
+}
+.goods-actions-buy:hover,
+.goods-actions-buy:focus {
+  background-color: #5fbb2d;
+}
+.goods-actions-buy:active {
+  background-color: #518534;
+}
+.goods-actions-tab {
+  color: #32425c;
+  text-transform: uppercase;
+  border: 3px solid #63a63e;
+}
+.goods-actions-tab:hover,
+.goods-actions-tab:focus {
+  border-color: #32425c;
+}
+.goods-actions-tab:active {
+  opacity: 0.3;
+  border-color: #c1c6ce;
+}
+/*сделать тени при ниведении и клике*/
+.popular-manuf .popular-item {
+  border: 1px solid #eaeaea;
+  width: 220px;
+  height: 145px;
+}
+
+.popular-manuf .popular-item:active {
+  opacity: 0.3;
+}
+
+.main-service-text,
+.service-text,
+.about-company-text,
+.contacts-text {
+  font-family: "PTSans";
+  font-size: 13px;
+  line-height: 24px;
+  color: #000000;
+}
+.service-name {
+  font-size: 36px;
+  line-height: 36px;
+  color: #32425c;
+  text-transform: uppercase;
+}
+.service-button-delivery,
+.service-button-guarantee,
+.service-button-credit {
+  font: inherit;
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 30px;
+  color: #ffffff;
+  background-color: #32425c;
+  border: none;
+}
+.service-button-delivery:hover,
+.service-button-guarantee:hover,
+.service-button-credit:hover,
+.service-button-delivery:focus,
+.service-button-guarantee:focus,
+.service-button-credit:focus {
+  background-color: #293449;
+}
+.service-button-delivery:active,
+.service-button-guarantee:active,
+.service-button-credit:active {
+  color: #32425c;
+  background-color: #ffffff;
+}
+.about-company-title,
+.contacts-title {
+  color: #000000;
+}
+.delivery-item {
+  font-size: 18px;
+  line-height: 20px;
+  color: #000000;
+}
+.footer-navigation,
+.footer-middle {
+  font-size: 18px;
+  line-height: 24px;
+  background-color: #32425c;
+  list-style: none;
+}
+.footer-navigation a {
+  color: #ffffff;
+}
+.footer-navigation a:hover,
+.footer-navigation a:focus {
+  text-decoration: underline;
+  
+}
+.footer-navigation a:active {
+  opacity: 0.5;
+  color: #f1f5f7;
+  text-decoration: none;
+}
+.footer-add-menu a {
+  color: #ffd180;
+  list-style: none;
+}
+.footer-add-menu a:hover,
+.footer-add-menu a:focus {
+  text-decoration: underline;
+}
+.footer-add-menu a:active {
+  opacity: 0.5;
+  text-decoration: none;
 }
