@@ -358,9 +358,11 @@ li.popular-item:focus .goods-actions {
   color: #f1f5f7;
   text-decoration: none;
 }
+.footer-add-menu {
+  list-style: none;
+}
 .footer-add-menu a {
   color: #ffd180;
-  list-style: none;
 }
 .footer-add-menu a:hover,
 .footer-add-menu a:focus {
@@ -369,4 +371,17 @@ li.popular-item:focus .goods-actions {
 .footer-add-menu a:active {
   opacity: 0.5;
   text-decoration: none;
+}
+.footer-low {
+  font-size: 16px;
+  line-height: 18px;
+  background-color: #293449;
+}
+.social-list {
+  list-style: none;
+  text-align: center;
+}
+.email-feedback,
+.developer-button {
+  color: #ffd180;
 }
