@@ -49,7 +49,8 @@ a {
   
 }
 .main-header,
-.main-service {
+.main-service,
+.catalog-head {
   background-color: #f3f7f8;
   background-image: url(img/background-header.jpg);
   background-position: top center;
@@ -111,6 +112,29 @@ a {
   color: #000000;
   background-color: #ffffff;
 }
+.personal-area-link,
+.my-order-link {
+  font-size: 16px;
+  line-height: 18px;
+  color: #32425c;
+  text-decoration: underline;
+}
+/*.authorization-link:hover,
+authorization-link:focus {
+  
+}*/
+/*при наведении темнеют иконки*/
+.personal-area-link:hover,
+.my-order-link:hover,
+.personal-area-link:focus,
+.my-order-link:focus {
+  color: #ee434f;
+}
+.authorization-link:active,
+.personal-area-link:active,
+.my-order-link:active {
+  opacity: 0.3;
+}
 .header-top a:hover,
 .header-top a:focus {
   background-color: #212a3a;
@@ -150,6 +174,7 @@ a.offer-button:active {
   opacity: 0.5;
   background-color: #1d2739;
 }
+
 .header-search input {
   font: inherit;
   background-color: #293449;
@@ -214,7 +239,8 @@ button:active {
 .popular-title,
 .main-service-title,
 .about-company-title,
-.contacts-title {
+.contacts-title,
+.catalog-head {
   font-size: 30px;
   line-height: 30px;
   text-transform: uppercase;
@@ -417,4 +443,48 @@ li.popular-item:focus .goods-actions {
 .button-write-us {
   font: inherit;
   border: none;
+}
+.breadcrumbs {
+  list-style: none;
+}
+.breadcrumbs a,
+.breadcrumbs-current,
+.filter-name,
+.sorting-name {
+  font-family: "PTSans"
+  font-size: 13px;
+  line-height: 18px;
+  color: #000000;
+}
+.filter-head,
+.range-controls,
+.price-filter input,
+.sorting {
+  background-color: #f7f3ec;
+}
+
+.price-filte [input type="text"] {
+  font-family: "PTSans";
+  font-size: 17px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+.catalog-filters legend {
+  font-family: "PTSans";
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 30px;
+  color: #000000;
+  
+}
+.catalog-filters fieldset {
+  border: none;
+}
+.catalog-filters ul {
+  list-style: none;
+  font-family: "PTSans";
+  font-size: 15px;
+  line-height: 20px;
+  color: #000000;
+  text-transform: uppercase;
 }
