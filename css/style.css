@@ -240,7 +240,8 @@ button:active {
 .main-service-title,
 .about-company-title,
 .contacts-title,
-.catalog-head {
+.catalog-head,
+.catalog-infotext-title{
   font-size: 30px;
   line-height: 30px;
   text-transform: uppercase;
@@ -287,6 +288,7 @@ li.popular-item:focus .goods-actions {
 .goods-actions-buy:hover,
 .goods-actions-buy:focus {
   background-color: #5fbb2d;
+  
 }
 .goods-actions-buy:active {
   background-color: #518534;
@@ -304,21 +306,27 @@ li.popular-item:focus .goods-actions {
   opacity: 0.3;
   border-color: #c1c6ce;
 }
-/*сделать тени при ниведении и клике*/
+
 .popular-manuf .popular-item {
   border: 1px solid #eaeaea;
   width: 220px;
   height: 145px;
 }
+.popular-manuf .popular-item:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
 
 .popular-manuf .popular-item:active {
   opacity: 0.3;
 }
-
+.popular-goods .popular-item:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
 .main-service-text,
 .service-text,
 .about-company-text,
-.contacts-text {
+.contacts-text,
+.catalog-infotext-text {
   font-family: "PTSans";
   font-size: 13px;
   line-height: 24px;
@@ -440,6 +448,14 @@ li.popular-item:focus .goods-actions {
   line-height: 18px;
   color: #a9a9a9;
 }
+.write-us input:hover,
+.write-us textarea:hover {
+  border: 2px solid #b5b5b5;
+}
+.write-us input:focus,
+.write-us textarea:focus {
+  border: 2px solid #ee3643;
+}
 .button-write-us {
   font: inherit;
   border: none;
@@ -487,4 +503,74 @@ li.popular-item:focus .goods-actions {
   line-height: 20px;
   color: #000000;
   text-transform: uppercase;
+}
+/*у чекбоксов и радиобаттонов меняются цвет иконки при наведении, текст прежний*/
+.filter-field:disabled + label {
+  opacity: 0.3;
+}
+.filters-button {
+  font-family: "PTSans";
+  font-size: 13px;
+  line-height: 18px;
+  color: #000000;
+  background-color: #ffffff;
+  border: 1px solid #e5e5e5;
+}
+.sorting-items {
+  font-family: "PTSans";
+  font-size: 13px;
+  color: #000000;
+  opacity: 0.3;
+  border-bottom: 1px dashed #ee3643;
+  list-style: none;
+}
+a.sorting-items:hover,
+a.sorting-items:focus {
+  opacity: 1;
+  border-bottom: 1px solid #ee3643;
+}
+a.sorting-items:active {
+  color: #ee3643;
+  border-bottom: none;
+}
+li.sorting-items {
+  opacity: 1;
+  color: #ee3643;
+  border-bottom: none;
+}
+.pagination-list,
+.pagination-list a {
+  font-family: "PTSans";
+  font-size: 13px;
+  line-height: 18px;
+  color: #000000;
+  list-style: none;
+  border: 1px solid #e5e5e5;
+}
+
+.pagination-list a:hover,
+.pagination-list a:focus {
+  border: 1px solid #bdc6ca;
+}
+.pagination-list a:active {
+   border: 1px solid  #ee3643;
+}
+.pagination-items-current a {
+  color: #ffffff;
+  background-color:  #ee3643;
+}
+.modal-good-add-name {
+  font-size: 30px;
+  line-height: 30px;
+  color: #000000;
+}
+.modal-back {
+  background-color: #f1f1f1;
+}
+.continue-button {
+  font-size: 14px;
+  line-height: 18px;
+  color:  #000000;
+  text-transform: uppercase;
+  background-color: #ffffff;
 }
