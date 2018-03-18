@@ -521,7 +521,7 @@ li.popular-item:focus .goods-actions {
   font-size: 13px;
   color: #000000;
   opacity: 0.3;
-  border-bottom: 1px dashed #ee3643;
+  border-bottom: 1px dotted #ee3643;
   list-style: none;
 }
 a.sorting-items:hover,
