@@ -90,7 +90,7 @@ a {
   color: #ee3643;
 }
 .header-search {
-  font-family: inheric;
+  font-family: inherit;
   background-color: #293449;
   color: #ffffff;
 }
@@ -248,21 +248,21 @@ button:active {
   color: #32425c;
 }
 .goods-name {
-  font-family: "PTSans";
+  font-family: "PTSans", Arial, sans-serif;
   font-size: 18px;
   line-height: 20px;
   font-weight: bold;
   color: #000000;
 }
 .goods-old-price {
-  font-family: "PTSans";
+  font-family: "PTSans", Arial, sans-serif;
   font-weight: bold;
   text-transform: uppercase;
   color: #a9a9a9;
   text-decoration: line-through;
 }
 .goods-price {
-  font-family: "PTSans";
+  font-family: "PTSans", Arial, sans-serif;
   font-weight: bold;
   color: #ffffff;
   text-transform: uppercase;
@@ -327,7 +327,7 @@ li.popular-item:focus .goods-actions {
 .about-company-text,
 .contacts-text,
 .catalog-infotext-text {
-  font-family: "PTSans";
+  font-family: "PTSans", Arial, sans-serif;
   font-size: 13px;
   line-height: 24px;
   color: #000000;
@@ -443,7 +443,7 @@ li.popular-item:focus .goods-actions {
 }
 .write-us input,
 .write-us textarea {
-  font-family: "PTSans";
+  font-family: "PTSans", Arial, sans-serif;
   font-size: 13px;
   line-height: 18px;
   color: #a9a9a9;
@@ -467,7 +467,7 @@ li.popular-item:focus .goods-actions {
 .breadcrumbs-current,
 .filter-name,
 .sorting-name {
-  font-family: "PTSans"
+  font-family: "PTSans", Arial, sans-serif;
   font-size: 13px;
   line-height: 18px;
   color: #000000;
@@ -480,13 +480,13 @@ li.popular-item:focus .goods-actions {
 }
 
 .price-filte [input type="text"] {
-  font-family: "PTSans";
+  font-family: "PTSans", Arial, sans-serif;
   font-size: 17px;
   line-height: 18px;
   text-transform: uppercase;
 }
 .catalog-filters legend {
-  font-family: "PTSans";
+  font-family: "PTSans", Arial, sans-serif;
   font-weight: bold;
   font-size: 17px;
   line-height: 30px;
@@ -498,7 +498,7 @@ li.popular-item:focus .goods-actions {
 }
 .catalog-filters ul {
   list-style: none;
-  font-family: "PTSans";
+  font-family: "PTSans", Arial, sans-serif;
   font-size: 15px;
   line-height: 20px;
   color: #000000;
@@ -509,7 +509,7 @@ li.popular-item:focus .goods-actions {
   opacity: 0.3;
 }
 .filters-button {
-  font-family: "PTSans";
+  font-family: "PTSans", Arial, sans-serif;
   font-size: 13px;
   line-height: 18px;
   color: #000000;
@@ -517,7 +517,7 @@ li.popular-item:focus .goods-actions {
   border: 1px solid #e5e5e5;
 }
 .sorting-items {
-  font-family: "PTSans";
+  font-family: "PTSans", Arial, sans-serif;
   font-size: 13px;
   color: #000000;
   opacity: 0.3;
@@ -540,7 +540,7 @@ li.sorting-items {
 }
 .pagination-list,
 .pagination-list a {
-  font-family: "PTSans";
+  font-family: "PTSans", Arial, sans-serif;
   font-size: 13px;
   line-height: 18px;
   color: #000000;
