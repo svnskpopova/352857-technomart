@@ -1,37 +1,37 @@
 @font-face {
   font-family: "Cuprum";
   src: local("Cuprum"),
-    url("font/web/cuprum.woff2") format("woff2");
+    url("fonts/web/cuprum.woff2") format("woff2");
 }
 @font-face {
   font-family: "CuprumBold";
   src: local("CuprumBold"),
-    url("font/web/cuprumbold.woff2") format("woff2");
+    url("fonts/web/cuprumbold.woff2") format("woff2");
 }
 @font-face {
   font-family: "CuprumBoldItalic";
   src: local("CuprumBoldItalic"),
-    url("font/web/cuprumbolditalic.woff2") format("woff2");
+    url("fonts/web/cuprumbolditalic.woff2") format("woff2");
 }
 @font-face {
   font-family: "CuprumItalic";
   src: local("CuprumItalic"),
-    url("font/web/cuprumitalic.woff2") format("woff2");
+    url("fonts/web/cuprumitalic.woff2") format("woff2");
 }
 @font-face {
   font-family: "PTSans";
   src: local("PTSans"),
-    url("font/web/ptsans.woff2") format("woff2");
+    url("fonts/web/ptsans.woff2") format("woff2");
 }
 @font-face {
   font-family: "PTSansBold";
   src: local("PTSansBold"),
-    url("font/web/ptsansbold.woff2") format("woff2");
+    url("fonts/web/ptsansbold.woff2") format("woff2");
 }
 @font-face {
   font-family: "PTSansBold";
   src: local("PTSansBold"),
-    url("font/web/ptsansbold.woff2") format("woff2");
+    url("fonts/web/ptsansbold.woff2") format("woff2");
 }
 body {
   margin: 0;
