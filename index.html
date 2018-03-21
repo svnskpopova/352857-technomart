@@ -8,7 +8,11 @@
   </head>
   <body>
     <header class="main-header">
+      
+      <div class="container">
+        <div class="header-top-wrapper">
       <div class="header-top">
+          <a class="main-header-logo">Техномарт</a>
           <form class="header-search" action="http://echo.htmlacademy.ru" method="post">
             <div class="search-item">
               <label for="search-form" aria-label="Поиск"></label>
@@ -19,6 +23,9 @@
           <a class="cart" href="cart.html">Корзина:0</a>
           <a class="offer-button" href="offer-page.html">Оформить заказ</a>
       </div>
+        </div>
+      
+        <div class="header-middle-bottom-wrapper">
       <div class="header-middle">
         <h1 class="header-title">Интернет-магазин строительных материалов и инструмента для ремонта</h1>
         <div class="header-contacts">
@@ -35,7 +42,7 @@
         </ul>
       </div>
         <nav class="main-navigation" aria-label="Главное меню">
-          <a class="main-header-logo">Техномарт</a>
+          
           <ul class="site-navigation" aria-label="Главное меню">
             <li><a href="main.html">Главная</a></li>
             <li><a href="company.html">Компания</a></li>
@@ -46,33 +53,35 @@
             <li><a href="contacts.html">Контакты</a></li>
           </ul>
         </nav>
+          </div>
+        </div>
         
       </header>
       <main class="container">
         <section class="menu-containers">
           <h2 class="visually-hidden">Разделы</h2>
           <ul class="section-list" aria-label="Список разделов">
-            <li class="section-materials">
+            <li class="section-materials section-items">
               <h3 class="section-name">Материалы</h3>
               <a class="section-button" href="materials.html">На любой вкус</a>
             </li>
-            <li class="section-tool">
+            <li class="section-tool section-items">
               <h3 class="section-name">Инструмент</h3>
               <a class="section-button" href="tool.html">На все случаи</a>
             </li>
-            <li class="section-tech">
+            <li class="section-tech section-items">
               <h3 class="section-name">Техника</h3>
               <a class="section-button" href="tech.html">Для стройки</a>
             </li>
-            <li class="section-sale">
+            <li class="section-sale section-items">
               <h3 class="section-name">Скидки 50%</h3>
               <a class="section-button" href="sale.html">На 350 товаров</a>
             </li>
-            <li class="section-delivery">
+            <li class="section-delivery section-items">
               <h3 class="section-name">Доставка</h3>
               <a class="section-button" href="delivery.html">Бесплатно</a>
             </li>
-            <li>
+            <li class="section-slider">
               <div class="main-slider">
                 <div class="slide">
                   <p class="slide-description"><span class="slide-name">Дрели</span><span class="slide-tagline">Соседям на радость</span></p>
@@ -205,6 +214,7 @@
             </li>
           </ul>
         </section>
+        <div class="main-service-wrapper">
         <section class="main-service">
           <h2 class="main-service-title">Сервисы</h2>
           <p class="main-service-text">
@@ -246,13 +256,15 @@
             </div>
           </div>
         </section>
+          </div>
+        <div class="company-contact-wrapper">
         <section class="about-company">
           <h2 class="about-company-title">Компания "Техномарт"</h2>
           <p class="about-company-text">
             Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и
             строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.
           </p>
-          <p>
+          <p class="about-company-text">
             Мы можем доставить ваш товар в самые отдаленные точки России!
             Техномарт работает со многими транспортными компаниями:
           </p>
@@ -274,8 +286,10 @@
           </a>
           <a class="contacts-buttom button" href="contacts.html">Заблудились? Напишите нам!</a>
         </section>
+          </div>
       </main>
     <footer class="main-footer">
+      <div class="container">
       <div class="footer-top">
          <a class="main-header-logo">Техномарт</a>
          <ul class="footer-navigation" aria-label="Главное меню">
@@ -318,6 +332,7 @@
           <b>Разработано -</b>
           <a class="developer-button" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
         </p>
+      </div>
       </div>
     </footer>
     <section class="modal-write-us">

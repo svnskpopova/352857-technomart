@@ -56,23 +56,69 @@ a {
   background-position: top center;
   background-repeat: repeat;
 }
+.header-top-wrapper {
+   width: 100%;
+   background-color: #293449;
+}
+.header-middle-bottom-wrapper {
+  width: 100%;
+  
+  background-color: #f3f7f8;
+ ;
+}
+.container {
+  width: 940px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+.main-header {
+  padding-bottom: 60px;
+}
+.user-navigation {
+  display: flex;
+  align-items: center;
+  
+  margin: 0;
+  padding: 0;
+  width: 300px;
+  list-style: none;
+}
+.site-navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  width: 940px;
+  list-style: none;
+  
+}
 .header-top {
   font-size: 17px;
   background-color: #293449;
+  width: 940px;
 }
 .main-navigation {
   font-size: 17px;
   line-height: 17px;
   background-color: #293449;
 }
+.header-top {
+  display: flex;
+  align-items: center;
+}
+.header-middle {
+  display: flex;
+  align-items: center;
+  width: 940px;
+}
+
+
 .header-top a,
 .main-navigation a {
   color: #ffffff;
 }
-.site-navigation,
-.user-navigation {
-  list-style: none;
-}
+
 .main-header-logo {
   font-size: 24px;
   line-height: 24px;
@@ -201,6 +247,26 @@ a.offer-button:active {
   background-color: #b2b2b2;
 }
 }
+.menu-containers {
+  width: 940px;
+}
+.section-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+}
+.section-items {
+ flex-basis: 300px;
+}
+.section-slider {
+  order: 0;
+}
+.main-slider {
+  width: 620px;
+}
 .menu-containers h3 {
   font-size: 24px;
   line-height: 30px;
@@ -246,7 +312,31 @@ button:active {
   line-height: 30px;
   text-transform: uppercase;
   color: #32425c;
+  margin: 0;
+  padding: 0;
+  
 }
+.popular-title {
+  margin-top: 20px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 25px;
+  
+  
+}
+.popular-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+}
+.popular-item {
+  margin-top: 20px;
+  
+  width: 220px;
+}
+
 .goods-name {
   font-family: "PTSans", Arial, sans-serif;
   font-size: 18px;
@@ -322,6 +412,20 @@ li.popular-item:focus .goods-actions {
 .popular-goods .popular-item:hover {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
+.main-service-wrapper {
+  width: 100%;
+  background-color: #f3f7f8;
+}
+.main-service {
+  margin-top: 80px;
+}
+.main-service-title {
+  margin: 0;
+  padding: 0;
+  padding-top: 65px;
+  padding-bottom: 35px;
+  
+}
 .main-service-text,
 .service-text,
 .about-company-text,
@@ -331,12 +435,19 @@ li.popular-item:focus .goods-actions {
   font-size: 13px;
   line-height: 24px;
   color: #000000;
+  margin: 0;
+  padding: 0;
+  
+}
+.main-service-text {
+  padding-bottom: 75px;
 }
 .service-name {
   font-size: 36px;
   line-height: 36px;
   color: #32425c;
   text-transform: uppercase;
+  
 }
 .service-button-delivery,
 .service-button-guarantee,
@@ -363,14 +474,87 @@ li.popular-item:focus .goods-actions {
   color: #32425c;
   background-color: #ffffff;
 }
+.company-contact-wrapper {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  padding-top: 80px;
+  
+}
+.about-company {
+  width: 540px;
+  margin-right: 100px;
+}
+.contacts {
+  width: 300px;
+}
 .about-company-title,
 .contacts-title {
   color: #000000;
+  padding-bottom: 35px;
+}
+.about-company-text {
+  padding-bottom: 25px;
+}
+.contacts-text {
+  padding-bottom: 35px;
+}
+.delivery-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 .delivery-item {
   font-size: 18px;
   line-height: 20px;
   color: #000000;
+}
+.footer-top,
+.footer-middle,
+.footer-low {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+}
+.main-footer {
+  margin-top: 86px;
+}
+.footer-top {
+  background-color: #32425c;
+}
+.footer-low {
+  padding-top: 35px;
+}
+.footer-copyright {
+  margin: 0;
+  padding: 0;
+  width: 300px;
+}
+.footer-feedback {
+  margin: 0;
+  padding: 0;
+  width: 140px;
+}
+.footer-developer {
+  margin: 0;
+  padding: 0;
+  width: 140px;
+}
+.social-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  width: 220px;
+}
+.footer-navigation {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  width: 700px;
 }
 .footer-navigation,
 .footer-middle {
@@ -393,6 +577,9 @@ li.popular-item:focus .goods-actions {
   text-decoration: none;
 }
 .footer-add-menu {
+  display: flex;
+  justify-content: space-between;
+  width: 540px;
   list-style: none;
 }
 .footer-add-menu a {
