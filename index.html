@@ -8,9 +8,9 @@
   </head>
   <body>
     <header class="main-header">
-      
+      <div class="header-top-wrapper">
       <div class="container">
-        <div class="header-top-wrapper">
+        
       <div class="header-top">
           <a class="main-header-logo">Техномарт</a>
           <form class="header-search" action="http://echo.htmlacademy.ru" method="post">
@@ -24,8 +24,9 @@
           <a class="offer-button" href="offer-page.html">Оформить заказ</a>
       </div>
         </div>
-      
+      </div>
         <div class="header-middle-bottom-wrapper">
+          <div class="container">
       <div class="header-middle">
         <h1 class="header-title">Интернет-магазин строительных материалов и инструмента для ремонта</h1>
         <div class="header-contacts">
@@ -40,7 +41,8 @@
             <a class="registration" href="registration.html">Регистрация</a>
           </li>
         </ul>
-      </div>
+        </div>
+      
         <nav class="main-navigation" aria-label="Главное меню">
           
           <ul class="site-navigation" aria-label="Главное меню">
@@ -54,10 +56,12 @@
           </ul>
         </nav>
           </div>
-        </div>
+          </div>
+        
         
       </header>
-      <main class="container">
+      <main>
+        <div class="container">
         <section class="menu-containers">
           <h2 class="visually-hidden">Разделы</h2>
           <ul class="section-list" aria-label="Список разделов">
@@ -214,7 +218,9 @@
             </li>
           </ul>
         </section>
+          </div>
         <div class="main-service-wrapper">
+          <div class="container">
         <section class="main-service">
           <h2 class="main-service-title">Сервисы</h2>
           <p class="main-service-text">
@@ -257,7 +263,9 @@
           </div>
         </section>
           </div>
+           </div>
         <div class="company-contact-wrapper">
+          
         <section class="about-company">
           <h2 class="about-company-title">Компания "Техномарт"</h2>
           <p class="about-company-text">
@@ -278,20 +286,22 @@
         <section class="contacts">
           <h2 class="contacts-title">Контакты</h2>
           <p class="contacts-text">
-            Вы можетезабрать товар сами,
+            Вы можете забрать товар сами,
             заехав в наш офис:
           </p>
-          <a href="map.html" aria-label="Адрес офиса: г. Санкт-Петербург, ул.Б. Конюшенная, д. 19/8">
-            <img src="img/map-index.png" width="300" height="158" alt="Адрес офиса: г. Санкт-Петербург, ул.Б. Конюшенная, д. 19/8">
+          <a  href="map.html" aria-label="Адрес офиса: г. Санкт-Петербург, ул.Б. Конюшенная, д. 19/8">
+            <img class="contact-map" src="img/map-index.png" width="300" height="158" alt="Адрес офиса: г. Санкт-Петербург, ул.Б. Конюшенная, д. 19/8">
           </a>
           <a class="contacts-buttom button" href="contacts.html">Заблудились? Напишите нам!</a>
         </section>
           </div>
+          
       </main>
     <footer class="main-footer">
+      <div class="footer-wrapper-high">
       <div class="container">
       <div class="footer-top">
-         <a class="main-header-logo">Техномарт</a>
+         <a class="main-header-logo footer-logo">Техномарт</a>
          <ul class="footer-navigation" aria-label="Главное меню">
            <li><a href="company.html">Компания</a></li>
            <li><a href="news.html">Новости</a></li>
@@ -312,7 +322,12 @@
           <li><a href="specialoffer.html">Спецпредложение</a></li>
         </ul>
       </div>
-      <div class="footer-low">
+        </div>
+        </div>
+      
+        <div class="footer-wrapper-down">
+           <div class="container">
+             <div class="footer-low">
         <p class="footer-copyright" aria-label="Копирайт">
            © 2010-2017 Компания "Техномарт"
            Все права защищены
@@ -326,7 +341,7 @@
         </div>
         <p class="footer-feedback">
           <b>Обратная связь:</b>
-          <a class="email-feedback" href="mailto:mail@htmlacademy.ru">Почта</a>
+          <a class="email-feedback" href="mailto:mail@htmlacademy.ru" aria-label="Электронная почта">mail@htmlacademy.ru</a>
         </p>
         <p class="footer-developer">
           <b>Разработано -</b>
@@ -334,6 +349,8 @@
         </p>
       </div>
       </div>
+        </div>
+        
     </footer>
     <section class="modal-write-us">
       <h2 class="visually-hidden">Напишите нам</h2>
