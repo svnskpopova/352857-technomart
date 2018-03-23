@@ -19,10 +19,10 @@
             </div>
           </form>
           <a class="tab" href="tab.html">Закладки:0</a>
-          <a class="cart" href="cart.html">Корзина:10</a>
+          <a class="cart-full" href="cart.html">Корзина:10</a>
           <a class="offer-button" href="offer-page.html">Оформить заказ</a>
       </div>
-        </div>
+      </div>
       </div>
         <div class="header-middle-bottom-wrapper">
           <div class="container">
@@ -32,11 +32,20 @@
           <p class="main-phone" aria-label="Телефон">+7(812)555-05-55</p>
           <p class="main-adress" aria-label="Адрес">г. Санкт-Петербург, ул.Б. Конюшенная, д. 19/8</p>
         </div>
-        <ul class="user-navigation" aria-label="Навигация пользователя">
-          <li><a class="authorization-link" href="profile.html" >Равшан Джамшутович</a></li>
-          <li><a class="login-link" href="login-link.html" aria-label="Выйти"></a></li>
-          <li><a class="personal-area-link" href="personal-aria">Личный кабинет</a></li>
-          <li><a class="my-order-link" href="my-order">Мои заказы</a></li>
+        <ul class=" user-navigation user-navigation-catalog" aria-label="Навигация пользователя">
+          <li>
+            <div clss="navigation-wrapper-high">
+              <a class="authorization-link" href="profile.html" >Равшан Джамшутович</a>
+              <a class="login-link" href="login-link.html" aria-label="Выйти"></a>
+            </div>
+          </li>
+          <li>
+            <div clss="navigation-wrapper-low">
+              <a class="my-order-link" href="my-order">Мои заказы</a>
+            <a class="personal-area-link" href="personal-aria">Личный кабинет</a>
+          
+            </div>
+          </li>
         </ul>
       </div>
         <nav class="main-navigation" aria-label="Главное меню">
@@ -51,16 +60,18 @@
             <li><a href="contacts.html">Контакты</a></li>
           </ul>
         </nav>
-            </div>
+          </div>
           </div>
       </header>
     <main>
+      <div class="container">
       <h2 class="page-title">Перфораторы</h2>
         <ul class="breadcrumbs">
           <li><a href="maincatalog.html">Каталог</a></li>
           <li><a href="tools.html">Инструмент</a></li>
           <li class="breadcrumbs-current">Перфораторы</li>
         </ul>
+        <div class="catalog-columns">
       <section class="filters">
         <div class="filter-head">
           <h3 class="filter-name">Фильтр:</h3>
@@ -122,12 +133,13 @@
           <button class="filters-button" type="submit">Показать</button>
         </form>
       </section>
+        <div>
       <div class="sorting">
         <h3 class="sorting-name">Сортировка:</h3>
         <ul class="sorting-list">
-          <li class="sorting-items">По цене</li>
-          <li><a class="sorting-items" href="bytype.html">По типу</a></li>
-          <li><a class="sorting-items" href="byfunctions">По функционалу</a></li>
+          <li class="sorting-items price">по цене</li>
+          <li><a class="sorting-items type" href="bytype.html">по типу</a></li>
+          <li><a class="sorting-items function" href="byfunctions">по функционалу</a></li>
         </ul>
       </div>
       <section class="catalog">
@@ -159,7 +171,7 @@
               <a class="goods-actions-tab" href="tab.html">В закладки</a>
             </div>
           </li>
-          <li class="popular-goods-item">
+          <li class="catalog-items">
              <h3 class="goods-name">Перфоратор BOSCH BFG 2000</h3>
             <p class="goods-image">
               <img src="img/perf2.jpg" width="220" height="154" alt="Перфоратор BOSCH BFG 2000">
@@ -249,6 +261,11 @@
           <li class="pagination-items"><a href="#">Следующая</a></li>
         </ul>
       </section>
+        </div>
+          </div>
+      </div>
+      <div class="catalog-infotext-wrapper">
+        <div class="container">
       <section class="catalog-infotext">
         <h3 class="catalog-infotext-title">Пара слов о перфораторах</h3>
         <p class="catalog-infotext-text">
@@ -256,6 +273,8 @@
           Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. В ассортиментном ряду есть выбор "трехрежимников": в одном устройстве будут совмещены отбойный молоток и удрарная дрель.
         </p>
       </section>
+        </div>
+        </div>
     </main>
     <footer class="main-footer">
       <div class="footer-wrapper-high">
@@ -307,7 +326,7 @@
           <a class="developer-button" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
         </p>
       </div>
-          </div>
+        </div>
         </div>
     </footer>
     <section class="modal-good-add">
