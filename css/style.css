@@ -1,37 +1,37 @@
 @font-face {
   font-family: "Cuprum";
   src: local("Cuprum"),
-    url("fonts/web/cuprum.woff2") format("woff2");
+    url("../fonts/web/cuprum.woff2") format("woff2");
 }
 @font-face {
   font-family: "CuprumBold";
   src: local("CuprumBold"),
-    url("fonts/web/cuprumbold.woff2") format("woff2");
+    url("../fonts/web/cuprumbold.woff2") format("woff2");
 }
 @font-face {
   font-family: "CuprumBoldItalic";
   src: local("CuprumBoldItalic"),
-    url("fonts/web/cuprumbolditalic.woff2") format("woff2");
+    url("../fonts/web/cuprumbolditalic.woff2") format("woff2");
 }
 @font-face {
   font-family: "CuprumItalic";
   src: local("CuprumItalic"),
-    url("fonts/web/cuprumitalic.woff2") format("woff2");
+    url("../fonts/web/cuprumitalic.woff2") format("woff2");
 }
 @font-face {
   font-family: "PTSans";
   src: local("PTSans"),
-    url("fonts/web/ptsans.woff2") format("woff2");
+    url("../fonts/web/ptsans.woff2") format("woff2");
 }
 @font-face {
   font-family: "PTSansBold";
   src: local("PTSansBold"),
-    url("fonts/web/ptsansbold.woff2") format("woff2");
+    url("../fonts/web/ptsansbold.woff2") format("woff2");
 }
 @font-face {
   font-family: "PTSansBold";
   src: local("PTSansBold"),
-    url("fonts/web/ptsansbold.woff2") format("woff2");
+    url("../fonts/web/ptsansbold.woff2") format("woff2");
 }
 body {
   margin: 0;
@@ -449,16 +449,16 @@ button:active {
   margin: 0;
   padding: 0;
   margin-top: 20px;
-  margin-right: 20px;
+  /*margin-right: 20px;*/
   
   width: 220px;
 }
-.catalog-items:nth-child(3n) {
+/*.catalog-items:nth-child(3n) {
   margin-right: 0;
 }
 .popular-item:nth-child(4n) {
   margin-right: 0;
-}
+}*/
 .goods-name {
   font-family: "PTSans", Arial, sans-serif;
   font-size: 18px;
@@ -996,7 +996,7 @@ li.sorting-items {
 .catalog-list {
   display: flex;
   flex-wrap: wrap;
-  align-content: center;
+  justify-content: space-between;
   padding: 0;
   margin: 0;
   width: 700px;
