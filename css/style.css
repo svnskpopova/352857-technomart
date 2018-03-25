@@ -47,6 +47,27 @@ body {
 a {
   text-decoration: none;
   }
+img {
+  max-width: 100%;
+  height: auto;
+}
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
 .main-header,
 .main-service {
   background-color: #f3f7f8;
@@ -101,19 +122,20 @@ a {
   list-style: none;  
 }
 .header-top {
+  display: flex;
+  align-items: center;
   font-size: 17px;
   background-color: #293449;
   width: 940px;
+  margin: 0;
+  padding: 0;
 }
 .main-navigation {
   font-size: 17px;
   line-height: 17px;
   background-color: #293449;
 }
-.header-top {
-  display: flex;
-  align-items: center;
-}
+
 .header-middle {
   display: flex;
   align-items: center;
@@ -132,9 +154,9 @@ a {
   text-transform: uppercase;
   background-color: #ee3643;
   padding-left: 55px;
-  padding-right: 8px;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-right: 55px;
+  padding-top: 11px;
+  padding-bottom: 9px;
 }
 .authorization-link {
   font-size: 21px;
@@ -164,8 +186,8 @@ a {
   padding-left: 27px;
 }
 .search-item {
-  width: 240px;
-  margin-left: 10px;
+  margin: 0;
+  padding: 0;
 }
 
 .offer-button,
@@ -196,9 +218,12 @@ a {
   padding-left: 53px;
 }
 .header-search {
+  position: relative;
   font-family: inherit;
   background-color: #293449;
   color: #ffffff;
+  margin: 0;
+  padding: 0;
 }
 .main-phone {
   font-size: 21px;
@@ -312,19 +337,69 @@ a.offer-button:active {
   opacity: 0.5;
   background-color: #1d2739;
 }
-
+.header-search label {
+  margin: 0;
+  padding: 0;
+  
+}
 .header-search input {
+  
+  box-sizing: border-box;
+  width: 192px;
+  margin: 0;
+  width: 270px;
+  
+  padding-left: 49px;    
+  padding-top: 9px;
+  padding-bottom: 9px;
   font: inherit;
+  
   background-color: #293449;
-  border-color: #293449;
+  border: none;
+  
+}
+.header-search svg {
+  content: "";
+  position: absolute;
+  width: 17px;
+  height: 17px;
+  top: 9px;
+  left: 16px;
+  opacity: 0.3;
+}
+input[type="search"]::-webkit-input-placeholder { 
+  color: #ffffff; 
+}
+input[type="search"]:-ms-input-placeholder { 
+  color: #ffffff; 
+}
+input[type="search"]::-ms-input-placeholder { 
+  color: #ffffff; 
+}
+input[type="search"]::placeholder { 
+  color: #ffffff; 
+} 
+.header-search input:hover + svg {
+  opacity: 1;
+}
+
+.header-search input:focus + svg path {
+  fill: #ee3643;
+  
+}
+.header-search input:focus + svg  {
+  opacity: 1;
+  
 }
 .header-search input:hover {
   background-color: #212a3a;
-  border-color: #212a3a;
+  
+  
 }
 .header-search input:focus {
   background-color: #ffffff;
-  border-color: #ffffff;
+  border: none;
+  color: #000000;
 }
 .section-button {
   color: #ffffff;
