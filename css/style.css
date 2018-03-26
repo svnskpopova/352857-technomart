@@ -94,6 +94,7 @@ input[type="radio"].visually-hidden {
 }
 .user-navigation {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
   margin: 0;  
@@ -103,6 +104,7 @@ input[type="radio"].visually-hidden {
 }
 .user-navigation-catalog {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   align-items: center;
   margin: 0;
@@ -110,18 +112,32 @@ input[type="radio"].visually-hidden {
   width: 300px;
   list-style: none;
 }
-
+.main-navigation {
+  font-size: 17px;
+  line-height: 17px;
+  background-color: #32425c;
+  padding-left: 20px;
+}
 .site-navigation {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
-  justify-content: space-between;
   margin: 0;
-  padding-top: 18px;
-  padding-bottom: 20px;
-  padding-left: 52px;
-  padding-right: 55px;
+  padding: 0;   
   width: 940px;
   list-style: none;  
+}
+.site-navigation a {
+  display: block;
+  margin: 0;
+  padding: 0;
+  padding-top: 18px;
+  padding-bottom: 22px;
+  padding-right: 30px;
+  vertical-align: center;
+  padding-left: 30px;
+  
+
 }
 .header-top {
   display: flex;
@@ -132,11 +148,7 @@ input[type="radio"].visually-hidden {
   margin: 0;
   padding: 0;
 }
-.main-navigation {
-  font-size: 17px;
-  line-height: 17px;
-  background-color: #293449;
-}
+
 
 .header-middle {
   display: flex;
@@ -388,11 +400,7 @@ a.registration:active {
   opacity: 0.3;
   color: #000000;
 }
-/*.authorization-link:hover,
-authorization-link:focus {
-  
-}*/
-/*при наведении темнеют иконки*/
+
 .personal-area-link:hover,
 .my-order-link:hover,
 .personal-area-link:focus,
