@@ -880,23 +880,29 @@ input[type="search"]::placeholder {
   font-weight: bold;
   color: #000000;
   order: 2;
+  padding: 0;
+  padding-top: 25px;
   padding-left: 30px;
   padding-right: 30px;
   margin: 0;
-  margin-bottom: 14px;
+  margin-bottom: 10px;
 }
 .goods-image {
   order: 1;
+  margin: 0;
+  padding: 0;
 }
 .goods-image img {
   max-width: 100%;
 }
 .goods-old-price {
   font-family: "PTSans", Arial, sans-serif;
+  font-size: 17px;
+  line-height: 18px;
   font-weight: bold;
   text-transform: uppercase;
   color: #a9a9a9;
-  text-decoration: line-through;
+  text-decoration: line-through;  
   order: 3;  
   min-height: 20px;
   
@@ -916,14 +922,12 @@ input[type="search"]::placeholder {
   background-position: 0 0; 
   z-index: 20;
 }
-/*.new-flag {
-  background-image: url("../img/new-flag.png");
-  background-repeat: no-repeat;
-  background-position: center;
-}*/
+
 .goods-price {
   position: relative;
   font-family: "PTSans", Arial, sans-serif;
+  font-size: 17px;
+  line-height: 18px;
   font-weight: bold;
   color: #ffffff;
   text-transform: uppercase;
@@ -931,7 +935,7 @@ input[type="search"]::placeholder {
   order: 4;
   margin:10px auto;
   margin-bottom:20px;
-  padding:10px 30px;
+  padding: 9px 39px;
   border-radius: 3px;
 }
 .goods-price::after{
@@ -1007,7 +1011,13 @@ input[type="search"]::placeholder {
   opacity: 0.3;
   border-color: #c1c6ce;
 }
-
+.popular-manu-logo {
+  margin: auto auto;
+  vertical-align: middle;
+}
+.popular-manuf .popular-head {
+  margin-top: 20px;
+}
 .popular-manuf .popular-item {
   border: 1px solid #eaeaea;
   width: 220px;
