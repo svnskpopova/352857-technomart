@@ -1045,7 +1045,7 @@ input[type="search"]::placeholder {
   margin: 0;
   padding: 0;
   padding-top: 65px;
-  padding-bottom: 35px;  
+  padding-bottom: 27px;  
 }
 .catalog-infotext-wrapper {
   width: 100%;
@@ -1068,12 +1068,13 @@ input[type="search"]::placeholder {
   padding-bottom: 70px;
 }
 .main-service-text {
+  
   width: 400px;
   padding-bottom: 75px;  
 }
 .service-text {
-  width: 300px;
-  padding-right: 25px;  
+  width: 370px;
+  
 }
 .service-name {
   font-size: 36px;
@@ -1081,6 +1082,42 @@ input[type="search"]::placeholder {
   color: #32425c;
   text-transform: uppercase;  
 }
+
+.service-slider-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.service-slider {
+  margin: 0;
+  padding: 0;
+  margin-top: -30px;
+}
+.service-button {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 218px;
+  
+}
+.service-button::after {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 272px;  
+  top: -30px;
+  right: 0;
+  background-image: url("../img/shadow-index.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+.service-button button {
+  text-align: left;
+  width: 218px; 
+  padding-left: 22px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
 .service-button-delivery,
 .service-button-guarantee,
 .service-button-credit {
@@ -1091,6 +1128,10 @@ input[type="search"]::placeholder {
   color: #ffffff;
   background-color: #32425c;
   border: none;
+}
+.service-button-guarantee {
+  border-bottom: 1px solid #4e637c; 
+  border-top: 1px solid #4e637c;
 }
 .service-button-delivery:hover,
 .service-button-guarantee:hover,
@@ -1105,6 +1146,55 @@ input[type="search"]::placeholder {
 .service-button-credit:active {
   color: #32425c;
   background-color: #ffffff;
+}
+.service-slide-item {
+  position: relative;
+  width: 630px;  
+}
+
+.service-slide-item {
+  display: none;
+}
+.service-slide-item:nth-child(1) {
+  display: block;
+}
+.delivery-slide-item {
+  background-image: url("../img/slider-delivery.jpg");
+  height: 283px;
+  background-repeat: no-repeat;
+  background-position: top right;
+}
+.delivery-slide-item p {
+  width: 280px;
+}
+.guarantee-slide-item {
+  background-image: url("../img/slider-guarantee.jpg"); 
+  height: 283px;
+  background-repeat: no-repeat;
+  background-position: top right;
+}
+.guarantee-slide-item p {
+  width: 385px;
+}
+
+.credit-slide-item {
+  background-image: url("../img/slider-credit.jpg");
+  height: 283px;
+  background-repeat: no-repeat;
+  background-position: top right;
+}
+.credit-slide-item p {
+  padding-bottom: 25px;
+}
+.credit-buttom {
+  display: block;
+  width: 196px;
+  padding-left: 45px;
+  padding-right: 45px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 3px;
+  margin-bottom: 25px;
 }
 .company-contact-wrapper {
   display: flex;
