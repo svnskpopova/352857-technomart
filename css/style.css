@@ -1070,10 +1070,11 @@ input[type="search"]::placeholder {
 .main-service-text {
   
   width: 400px;
-  padding-bottom: 75px;  
+  padding-bottom: 62px;  
 }
 .service-text {
   width: 370px;
+  padding-left: 10px;
   
 }
 .service-name {
@@ -1081,6 +1082,8 @@ input[type="search"]::placeholder {
   line-height: 36px;
   color: #32425c;
   text-transform: uppercase;  
+  padding-left: 10px;
+  margin-bottom: 25px;
 }
 
 .service-slider-wrapper {
@@ -1091,12 +1094,15 @@ input[type="search"]::placeholder {
   margin: 0;
   padding: 0;
   margin-top: -30px;
+  
 }
 .service-button {
   position: relative;
   display: flex;
   flex-direction: column;
-  width: 218px;
+  width: 238px;
+  margin-top: 5px;
+  
   
 }
 .service-button::after {
@@ -1112,7 +1118,7 @@ input[type="search"]::placeholder {
 }
 .service-button button {
   text-align: left;
-  width: 218px; 
+  width: 238px; 
   padding-left: 22px;
   padding-top: 15px;
   padding-bottom: 15px;
@@ -1141,6 +1147,7 @@ input[type="search"]::placeholder {
 .service-button-credit:focus {
   background-color: #293449;
 }
+.active-service-button,
 .service-button-delivery:active,
 .service-button-guarantee:active,
 .service-button-credit:active {
@@ -1162,39 +1169,40 @@ input[type="search"]::placeholder {
   background-image: url("../img/slider-delivery.jpg");
   height: 283px;
   background-repeat: no-repeat;
-  background-position: top right;
+  background-position: 160px 25px;
 }
 .delivery-slide-item p {
-  width: 280px;
+  width: 275px;
 }
 .guarantee-slide-item {
   background-image: url("../img/slider-guarantee.jpg"); 
   height: 283px;
   background-repeat: no-repeat;
-  background-position: top right;
+  background-position: 248px 3px;
 }
 .guarantee-slide-item p {
-  width: 385px;
+  width: 375px;
 }
 
 .credit-slide-item {
   background-image: url("../img/slider-credit.jpg");
   height: 283px;
   background-repeat: no-repeat;
-  background-position: top right;
+  background-position: 175px 0px;
 }
 .credit-slide-item p {
   padding-bottom: 25px;
 }
 .credit-buttom {
   display: block;
-  width: 196px;
+  width: 106px;
   padding-left: 45px;
   padding-right: 45px;
   padding-top: 10px;
   padding-bottom: 10px;
   border-radius: 3px;
   margin-bottom: 25px;
+  margin-left: 10px;
 }
 .company-contact-wrapper {
   display: flex;
