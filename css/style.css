@@ -1209,7 +1209,8 @@ input[type="search"]::placeholder {
   justify-content: center;
   margin: 0;
   padding: 0;
-  padding-top: 80px;  
+  padding-top: 80px; 
+  padding-bottom: 10px;
 }
 .about-company {
   width: 540px;
@@ -1304,9 +1305,13 @@ input[type="search"]::placeholder {
   background-color: #32425c;
 }
 .footer-logo {
-  padding-top: 14px;
+  font-size: 30px;
+  line-height: 30px;
+  padding-top: 17px;
   padding-bottom: 15px;
-  padding-left: 42px;
+  padding-left: 40px;
+  padding-right: 40px;
+  
   
 }
 .footer-copyright {
@@ -1330,6 +1335,7 @@ input[type="search"]::placeholder {
   margin: 0;
   padding: 0;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   width: 220px;
 }
@@ -1337,8 +1343,10 @@ input[type="search"]::placeholder {
   margin: 0;
   padding: 0;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   width: 700px;  
+  padding-left: 175px;
 }
 .footer-navigation,
 .footer-middle {
@@ -1348,11 +1356,12 @@ input[type="search"]::placeholder {
   list-style: none;
 }
 .footer-adress {
-  width: 380px;
+  width: 325px;
   margin: 0;
   padding-right: 55px;
-  padding-bottom: 50px;
-  padding-top: 26px;
+  padding-bottom: 48px;
+  padding-top: 30px;
+  padding-left: 3px;
 }
 .footer-navigation li {
   padding-top: 38px;
@@ -1372,20 +1381,25 @@ input[type="search"]::placeholder {
 }
 .footer-add-menu {
   display: flex;
-  justify-content: space-between;
-  width: 540px;
+  justify-content: space-between;  
+  width: 525px;
   list-style: none;
   margin: 0;
-  padding: 0;
+  padding: 0; 
+  
 }
 .footer-add-menu li {
   width: 540px;
   margin: 0;
-  padding-top: 27px;
+  padding: 0;
+  padding-top: 29px;
   padding-bottom: 70px;
 }
 .footer-add-menu a {
+  margin: 0;
+  padding: 0;
   color: #ffd180;
+  
 }
 .footer-add-menu a:hover,
 .footer-add-menu a:focus {
