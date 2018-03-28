@@ -1643,7 +1643,9 @@ input[type="search"]::placeholder {
 }
 */
 .modal-write-us {
-  position: relative;
+  position: fixed;
+  bottom: 120px;
+  right: 25%;
   font-size: 18px;
   line-height: 18px;
   color: #000000;
@@ -1653,6 +1655,10 @@ input[type="search"]::placeholder {
   padding-left: 80px;
   padding-top: 44px;  
   border-top: 7px solid #ff5357;
+  box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
+}
+.modal-write-us {
+  display: none;
 }
 .modal-close {
   content: "";
@@ -1666,10 +1672,13 @@ input[type="search"]::placeholder {
   background-position: 0 0;
   border: none;
   background-color: #ffffff;
+  cursor: pointer;
 }
+/*
 .modal-write-us:hover {
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
 }
+*/
 .write-us input,
 .write-us textarea {
   font-family: "PTSans", Arial, sans-serif;
@@ -1698,8 +1707,10 @@ input[type="search"]::placeholder {
 }
 .write-us input:focus,
 .write-us textarea:focus {
-  border: 2px solid #ee3643;
+  border: 2px solid #ee3643;  
+  color: #000000;
 }
+
 .button-write-us {
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 14px;
@@ -2194,9 +2205,16 @@ li.sorting-items {
   border: 1px solid #ee3643;
 }
 .modal-good-add {
-  position: relative;
+  position: fixed;
+  bottom: 120px;
+  right: 25%;
   width: 620px;
   border-top: 7px solid #ff5357;
+  box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
+  background-color: #ffffff;
+}
+.modal-good-add {
+  display: none;
 }
 .modal-close-add {
   content: "";
@@ -2210,6 +2228,7 @@ li.sorting-items {
   background-position: 0 0;
   border: none;
   background-color: #ffffff;
+  cursor: pointer;
 }
 
 .modal-good-add-name {
@@ -2285,6 +2304,42 @@ li.sorting-items {
 .modal-back-button:active {
   background-color: #e5e5e5;
 }
+/*
 .modal-good-add:hover {
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}*/
+.modal-map {
+  position: fixed;
+  bottom: 120px;
+  right: 15%;
+  width: 940px;
+  height: 445px;  
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.7);  
+  background-color: transparent;
+  border: none;
+}
+.modal-map p {
+  margin: 0;
+}
+
+.modal-map img {
+  width: 100%;
+}
+.modal-map {
+  display: block;
+}
+
+.modal-close-map {
+  content: "";
+  position: absolute;
+  width: 21px;
+  height: 21px;  
+  top: 10px;
+  right: 9px;
+  background-image: url("../img/icon-cancel.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-color: transparent;
+  border: none;  
+  cursor: pointer;
 }
