@@ -914,6 +914,7 @@ input[type="search"]::placeholder {
   margin: 0;
   margin-top: 50px;
 }
+
 .popular-title,
 .main-service-title,
 .about-company-title,
@@ -947,8 +948,14 @@ input[type="search"]::placeholder {
   margin-bottom: 18px;
 }
 .catalog-infotext-title {
-  padding-top: 60px;
-  padding-bottom: 30px;
+  font-weight: normal;
+  color: #000000;
+  padding-top: 65px;
+  padding-bottom: 20px;
+  padding-left: 0px;
+  padding-right: 0px;
+  margin: 0;  
+  margin-bottom: 5px;
 }
 
 
@@ -958,6 +965,7 @@ input[type="search"]::placeholder {
   flex-wrap: wrap;
   margin: 0;
   padding: 0;
+  
 }
 .popular-buttom {
   margin: 0;
@@ -993,8 +1001,8 @@ input[type="search"]::placeholder {
   font-weight: bold;
   color: #000000;
   order: 2;
-  padding: 0;
-  padding-top: 25px;
+  padding: 0; 
+  padding-top: 15px;
   padding-left: 30px;
   padding-right: 30px;
   margin: 0;
@@ -1004,10 +1012,17 @@ input[type="search"]::placeholder {
   order: 1;
   margin: 0;
   padding: 0;
+  margin-top: 40px;
+  height: 124px;
+/*  width: 220px;*/
+  padding-right: 15px;
 }
+
 .goods-image img {
   max-width: 100%;
+  
 }
+
 .goods-old-price {
   font-family: "PTSans", Arial, sans-serif;
   font-size: 17px;
@@ -1046,20 +1061,20 @@ input[type="search"]::placeholder {
   text-transform: uppercase;
   background-color: #ee3643;
   order: 4;
-  margin:10px auto;
-  margin-bottom:20px;
-  padding: 9px 39px;
+  margin: 10px auto;
+  margin-bottom: 20px;
+  padding: 9px 38px;
   border-radius: 3px;
 }
 .goods-price::after{
-  content:"";
-  position:absolute;
-  top:0;
-  right:-20px;
-  width:0;
-  height:0;
-  border:20px solid white;
-  border-left-color:#ee3643;
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -20px;
+  width: 0;
+  height: 0;
+  border: 18px solid white;
+  border-left-color: #ee3643;
 }
 .goods-price:hover,
 .goods-price:focus {
@@ -1067,6 +1082,13 @@ input[type="search"]::placeholder {
 }
 .goods-price:active {
   background-color: #ba2732;
+}
+.goods-price:focus::after,
+.goods-price:hover::after {
+  border-left-color: #ca2c37;
+}
+.goods-price:active::after {
+  border-left-color: #ba2732;
 }
 .goods-actions {
   position: absolute;
@@ -1078,11 +1100,14 @@ input[type="search"]::placeholder {
   background-color: rgba(255,255,255,0.9);
   z-index: 10;
 }
-.popular-item .goods-actions {
+.popular-item .goods-actions,
+.catalog-items .goods-actions {
   display: none;
 }
 .popular-item:hover .goods-actions,
-.popular-item:focus .goods-actions {
+.popular-item:focus .goods-actions,
+.catalog-items:hover .goods-actions,
+.catalog-items:focus .goods-actions {
   display: block;
 }
 .goods-actions-buy,
@@ -1094,17 +1119,19 @@ input[type="search"]::placeholder {
   padding: 7px 0;
   border: 3px solid #63a63e;  
   text-transform: uppercase;
+  border-radius: 3px;
 }
 .goods-actions-buy {
   color: #ffffff;
   text-transform: uppercase;
   background-color:#63a63e;
+  border-bottom: 3px solid #367315;
 }
 .goods-actions-buy:hover,
 .goods-actions-buy:focus {
   background-color: #5fbb2d;
   border-color: #5fbb2d;
-  
+  border-bottom: 3px solid #367315;
   
 }
 .goods-actions-buy:active {
@@ -1178,7 +1205,7 @@ input[type="search"]::placeholder {
   
 }
 .catalog-infotext-text {
-  padding-bottom: 70px;
+  padding-bottom: 69px;
 }
 .main-service-text {
   
@@ -2113,35 +2140,58 @@ li.sorting-items {
 */
 
 }
-.pagination-list a {
-  display: flex;
+
+.pagination-list-wrapper {
+  background-color: #ffffff;
+  
+}
+
+.pagination-list {
+  display: flex; 
+  flex-direction: row;
   margin: 0;
   padding: 0;
-  width: 300px;
+  list-style: none;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-top: 55px;
+  margin-bottom: 60px;
+  
 }
 
 .pagination-list a {
   font-family: "PTSans", Arial, sans-serif;
   font-size: 13px;
   line-height: 18px;
+  text-transform: uppercase;
   color: #000000;
   list-style: none;
   border: 1px solid #e5e5e5;
   margin: 0;
-  padding: 0;
-  margin-right: 10px;
-}
+  padding: 0;  
+  margin-right: 9px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 3px;
 
+}
+.pagination-items:nth-child(4) a {
+  padding-right: 30px;
+  padding-left: 30px;
+}
 .pagination-list a:hover,
 .pagination-list a:focus {
   border: 1px solid #bdc6ca;
 }
 .pagination-list a:active {
-   border: 1px solid  #ee3643;
+  border: 1px solid  #ee3643;
 }
 .pagination-items-current a {
   color: #ffffff;
   background-color:  #ee3643;
+  border: 1px solid #ee3643;
 }
 .modal-good-add-name {
   margin: 0;
