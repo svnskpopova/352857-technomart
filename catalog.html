@@ -91,13 +91,13 @@
             </div>
             <div class="price-filter">
              <input type="text" name="min-price" id="min-price" value="0">
-             <span>-</span>
+             <span class="price-filter-dash">—</span>
              <input type="text" name="man-price" id="man-price" value="30000">
             </div>
           </fieldset>
           <fieldset>
-            <legend>Производители:</legend>
-            <ul>
+            <legend class="filter-manuf-fieldset">Производители:</legend>
+            <ul class="filter-checkbox">
               <li class="filter-option">
                 <input class="visually-hidden filter-field" type="checkbox" name="bosch" id="filter-bosch" checked>
                 <label for="filter-bosch">bosch</label>
@@ -114,14 +114,14 @@
                 <label for="filter-dewalt">dewalt</label>
               </li>
               <li class="filter-option">
-                <input class="visually-hidden filter-field" type="checkbox" name="hitachi" id="filter-hitachi" disabled>
+                <input class="visually-hidden filter-field" type="checkbox" name="hitachi" id="filter-hitachi">
                 <label for="filter-hitachi">hitachi</label>
               </li>
             </ul>
           </fieldset>
           <fieldset>
-            <legend>Питание:</legend>
-            <ul>
+            <legend class="filter-feed-fieldset">Питание:</legend>
+            <ul class="filter-radio">
               <li class="filter-option">
                 <input class="visually-hidden filter-field" type="radio" name="feed" id="feed-battery" value="battery" checked>
                 <label for="feed-battery">аккумуляторные</label>
@@ -145,7 +145,7 @@
         </ul>
       </div>
       <section class="catalog">
-        <div class="catalog-head">
+        <div class="catalog-head visually-hidden">
           <h3>Перфораторы</h3>
         </div>
         <ul class="catalog-list">
