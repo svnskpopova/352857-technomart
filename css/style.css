@@ -2009,12 +2009,14 @@ legend.filter-feed-fieldset {
   background-color: #e5e5e5;
 }
 .sorting {
+  position: relative;
   display: flex;
   margin: 0;
   padding: 0;
   width: 700px;  
 }
 .sorting-list {
+  
   display: flex;
   margin: 0;
   padding: 0;
@@ -2025,12 +2027,14 @@ legend.filter-feed-fieldset {
 .sorting-items {
   font-family: "PTSans", Arial, sans-serif;
   font-size: 13px;
+  text-transform: uppercase;
   color: #000000;
   opacity: 0.3;
   border-bottom: 1px dotted #ee3643;
   list-style: none;
 }
 .sorting-name {
+  text-transform: uppercase;
   margin-right: 140px;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -2056,6 +2060,42 @@ li.sorting-items {
   opacity: 1;
   color: #ee3643;
   border-bottom: none;
+}
+
+ .sorting-img-up {
+  content: "";
+  position: absolute;
+  width: 11px;
+  height: 10px;
+  top: 14px;
+  right: 30px;  
+  margin-right: 20px;  
+}
+.sorting-img-down {
+  content: "";
+  position: absolute;
+  width: 11px;
+  height: 10px;
+  top: 14px;
+  right: 18px;   
+}
+
+
+.sorting-img-down polyline {
+  fill: #e5e5e5;
+}
+
+.sorting-img-up polygon {
+  fill: #e5e5e5;
+}
+.sorting-img-up polygon:hover,
+.sorting-img-up polygon:focus,
+.sorting-img-down polyline:hover,
+.sorting-img-down polyline:focus {
+  fill: #231f20;
+}
+.active polygon {
+  fill: #ee3643;
 }
 .catalog-list {
   display: flex;
