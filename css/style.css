@@ -95,12 +95,13 @@ input[type="radio"].visually-hidden {
 .user-navigation {
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
+/*  align-items: center;*/
   justify-content: space-between;
   margin: 0;  
   padding: 0;
   width: 300px;
   list-style: none;
+  margin-top: 9px;
 }
 .user-navigation-catalog {
   display: flex;
@@ -116,7 +117,10 @@ input[type="radio"].visually-hidden {
   margin: 0;
   padding: 0;
 }
-
+.user-navigation li {
+  margin: 0;
+  padding: 0;
+}
 .main-navigation {
   font-size: 17px;
   line-height: 17px;
@@ -158,8 +162,9 @@ input[type="radio"].visually-hidden {
 
 .header-middle {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   width: 940px;  
+  margin-top: 50px;
 }
 
 .header-top a,
@@ -194,13 +199,12 @@ input[type="radio"].visually-hidden {
 }
 */
 
-.login-link {
-  margin: 0;
-  width: 20px;
-  padding-right: 10px;
-  padding-top: 10px;
-  padding-bottom: 10px;
+/*
+
+li.login-link {
+  margin-right: -30px;
 }
+*/
 
 .tab {  
   position: relative;
@@ -273,18 +277,23 @@ input[type="radio"].visually-hidden {
 .cart-full {
   background-color: #ee3643;
 }
-
+/*
+.header-title-wrapper {
+  padding-top: 100px;
+}
+*/
 .header-title {
   font-size: 16px;
   line-height: 23px;
   font-style: italic;
   color: #ee3643;
   width: 200px;
+  margin: 0;
   padding-left: 53px;
-  padding-right: 25px;
-  margin-top: 50px;
+  padding-right: 25px;  
   margin-bottom: 40px;  
   margin-right: 24px;
+/*  padding-top: 25px;*/
 }
 .header-search {
   position: relative;
@@ -295,13 +304,17 @@ input[type="radio"].visually-hidden {
   padding: 0;
   
 }
+/*
 .header-middle {
   margin: 0;
   padding: 0;
 }
+*/
+/*
 .header-contacts {
   margin-top: 5px;
 }
+*/
 .main-phone {
   position: relative;
   font-size: 21px;
@@ -311,11 +324,13 @@ input[type="radio"].visually-hidden {
   border: 3px solid #ffffff;
   width: 230px;
   margin: 0;
+/*  margin-top: 5px;*/
   margin-left: 21px;  
-  padding-top: 15px;
-  padding-bottom: 10px;
+  padding-top: 9px;
+  padding-bottom: 8px;
   padding-right: 9px;
-  padding-left: 30px;
+  padding-left: 26px;
+  margin-top: -3px;
    
 }
 .main-phone::before {
@@ -323,11 +338,12 @@ input[type="radio"].visually-hidden {
   position: absolute;
   width: 19px;
   height: 19px;  
-  top: 15px;
-  left: 13px;
+  top: 10px;
+  left: 11px;
   background-image: url(../img/icon-phone.svg);
   background-repeat: no-repeat;
   background-position: 0 0;
+  
 }
 .main-adress {
   font-size: 14px;
@@ -335,7 +351,7 @@ input[type="radio"].visually-hidden {
   color: #32425c;
   text-align: center;
   width: 300px;
-  padding-left: 10px;
+  padding-left: 5px;
   padding-right: 40px;
   padding-top: 5px;
   margin: 0;  
@@ -348,22 +364,29 @@ input[type="radio"].visually-hidden {
   background-color: #ffffff;
   margin: 0;
   padding: 0;
-  padding-top: 12px;
-  padding-bottom: 12px;
-  margin-top: 34px;
+  padding-top: 9px;
+  padding-bottom: 11px;
+/*  margin-top: 34px;*/
   
 }
 
 .navigation-wrapper-high {
   display: flex;
-  background-color: #ffffff;
+  background-color: #ffffff;  
+/*  margin-top: 10px;*/
+  margin-bottom: 6px;
+  margin-top: -2px;
   
 }
+.navigation-wrapper-low {
+  display: flex;
+}
 
-
+/*
 .user-navigation-catalog li:nth-child(2) {
   margin-top: 15px;
 }
+*/
 a.authorization-link-in { 
   
   position: relative;
@@ -372,11 +395,12 @@ a.authorization-link-in {
   color: #000000;
   margin: 0;
   padding: 0;
-  padding-top: 12px;
-  padding-bottom: 12px;  
-  padding-left: 49px; 
+  padding-top: 11px;
+  padding-bottom: 12px; 
+  padding-left: 48px; 
   padding-right: 36px;
-  margin-left: -15px; 
+
+  margin-left: -8px; 
   
 }
 a.authorization-link-in:before {
@@ -384,7 +408,7 @@ a.authorization-link-in:before {
   position: absolute;
   width: 20px;
   height: 20px;  
-  top: 15px;
+  top: 11px;
   left: 15px;
   background-image: url(../img/icon-user.svg);
   background-repeat: no-repeat;
@@ -397,9 +421,10 @@ a.logout-link {
   position: relative;
   margin: 0;
   padding: 0;
-  padding-right: 30px;
+  padding-right: 30px;  
   padding-top: 12px;
   padding-bottom: 12px;
+  padding-left: 5px;
   background-color: #ffffff;
   margin-left: -4px;
   margin-top: 20px;
@@ -410,45 +435,36 @@ a.logout-link::before {
   position: absolute;
   width: 20px;
   height: 20px;  
-  top: 14px;
+  top: -7px;
   right: 10px;
   background-image: url(../img/icon-logout.svg);
   background-repeat: no-repeat;
   background-position: 0 0;
   opacity: 0.3;
 }
+/*
 .registration,
 .login-link {
   margin-top: -20px;
   padding: 0;
 }
+*/
 a.login-link {
   position: relative;  
   width: 45px;
   margin: 0;  
-  margin-left: 10px;
-  padding-right: 27px;
+  margin-left: 12px;
+  padding-right: 28px;
   padding-left: 48px;  
-  padding-bottom: 12px;
+  padding-bottom: 11px;
 }
 a.registration {
   width: 100px;
   margin: 0;
-  margin-left: 20px;
+/*  margin-left: -100px;*/
   padding-right: 25px;
   padding-left: 22px;  
   padding-bottom: 12px;
-}
-
-a.my-order-link::after {
-  content: "";
-  position: absolute;
-  width: 4px;
-  height: 4px;
-  border-radius: 50%;
-  background-color: #32425c;
-  top: 20px;
-  right: -20px;
 }
 a.personal-area-link,
 a.my-order-link {
@@ -457,20 +473,36 @@ a.my-order-link {
   color: #32425c;
   text-decoration: underline;
   background-color: transparent;
-  margin-top: 50px;
+  margin: 0;
+  padding: 0;
+  padding-top: 1px;
+  
   
 }
 a.my-order-link {
   position: relative;
-  margin-right: 30px;
-  margin-left: -62px;
+  margin-right: 33px;
+  margin-left: -55px;
 }
+a.my-order-link::after {
+  content: "";
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background-color: #32425c;
+  top: 8px;
+  right: -19px;
+}
+
+
+
 a.login-link::before {
   content: "";
   position: absolute; 
   width: 20px;
   height: 17px;
-  top: 15px;
+  top: 13px;
   left: 14px;
   background-image: url(../img/icon-login.svg);
   background-repeat: no-repeat;
@@ -578,8 +610,8 @@ a.main-header-logo:active {
   position: absolute;
   width: 17px;
   height: 17px;
-  top: 11px;
-  left: 16px;
+  top: 12px;
+  left: 17px;
   opacity: 0.3;
 }
 input[type="search"]::-webkit-input-placeholder { 
@@ -1447,7 +1479,7 @@ input[type="search"]::placeholder {
   padding: 0;
 }
 
-}
+
 .footer-top {
   background-color: #32425c;
 }
@@ -1930,7 +1962,7 @@ input[type="search"]::placeholder {
   cursor: pointer;
 }
 
-.price-filte [input type="text"] {
+.price-filte input [type="text"] {
   font-family: "PTSans", Arial, sans-serif;
   font-size: 17px;
   line-height: 18px;
