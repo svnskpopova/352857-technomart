@@ -90,7 +90,7 @@ input[type="radio"].visually-hidden {
   padding: 0 10px;
 }
 .main-header {
-  padding-bottom: 62px;
+  padding-bottom: 63px;
 }
 .user-navigation {
   display: flex;
@@ -943,9 +943,9 @@ input[type="search"]::placeholder {
   text-transform: uppercase;
   color: #32425c;  
   margin: 0;
-  padding-left: 30px;  
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-left: 29px;  
+  padding-top: 29px;
+  padding-bottom: 29px;
   background-color: #f2f6f8;
   margin-bottom: 18px;
 }
@@ -1733,15 +1733,17 @@ input[type="search"]::placeholder {
 
 }
 .breadcrumbs {
-  position: relative;
+/*  position: relative;*/
   display: flex;
   align-items: center;
   width: 380px;
   margin: 0;
   padding: 0;
   list-style: none;
-  padding-left: 53px;
+/*  padding-left: 53px;*/
 }
+
+/*
 .breadcrumbs::after {
   content: "";
   position: absolute;
@@ -1753,8 +1755,26 @@ input[type="search"]::placeholder {
   background-repeat: no-repeat;
   background-position: 0 0;
 }
+*/
+.breadcrumbs-home a {
+  position: relative; 
+  
+}
+.breadcrumbs-home a::after {
+  content: "";
+  position: absolute;
+  width: 14px;
+  height: 14px;  
+  top: 26px;
+  left: -2px;
+  background-image: url("../img/icon-home.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  
+}
 .breadcrumbs-catalog {
   position: relative;
+  margin-left: 13px;
 }
 
 .breadcrumbs-catalog::before {
@@ -1777,7 +1797,7 @@ input[type="search"]::placeholder {
   width: 8px;
   height: 13px;  
   top: 3px;
-  left: -20px;
+  left: -21px;
   background-image: url("../img/icon-right-small.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
