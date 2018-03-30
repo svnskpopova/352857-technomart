@@ -1112,14 +1112,14 @@ input[type="search"]::placeholder {
   order: 4;
   margin: 9px auto;
   margin-bottom: 20px;
-  padding: 10px 37px 10px 37px;
+  padding: 9px 37px 10px 37px;
   border-radius: 3px;  
 }
 .goods-price::after{
   content: "";
   position: absolute;
   top: 0;
-  right: -23px;
+  right: -20px;
   width: 0;
   height: 0;
   border: 19px solid white;
