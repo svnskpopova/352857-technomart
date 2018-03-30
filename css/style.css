@@ -252,7 +252,7 @@ li.login-link {
   width: 15px;
   height: 15px;  
   top: 12px;
-  left: 20px;
+  left: 18px;
   background-image: url(../img/icon-cart.svg);
   background-repeat: no-repeat;
   background-position: 0 0;
@@ -983,16 +983,18 @@ input[type="search"]::placeholder {
   padding-left: 23px; 
 }
 .page-title {
+  font-weight: normal;
   font-size: 30px;
   line-height: 30px;
   text-transform: uppercase;
   color: #32425c;  
   margin: 0;
-  padding-left: 29px;  
+  padding-left: 27px;  
   padding-top: 29px;
   padding-bottom: 29px;
   background-color: #f2f6f8;
-  margin-bottom: 18px;
+  margin-bottom: 20px;
+  margin-top: -3px;
 }
 .catalog-infotext-title {
   font-weight: normal;
@@ -1002,7 +1004,7 @@ input[type="search"]::placeholder {
   padding-left: 0px;
   padding-right: 0px;
   margin: 0;  
-  margin-bottom: 5px;
+  margin-bottom: 6px;
 }
 
 
@@ -1823,8 +1825,8 @@ input[type="search"]::placeholder {
   position: absolute;
   width: 14px;
   height: 14px;  
-  top: 26px;
-  left: -2px;
+  top: 24px;
+  left: -4px;
   background-image: url("../img/icon-home.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
@@ -1832,7 +1834,7 @@ input[type="search"]::placeholder {
 }
 .breadcrumbs-catalog {
   position: relative;
-  margin-left: 13px;
+  margin-left: 13px;  
 }
 
 .breadcrumbs-catalog::before {
@@ -1840,8 +1842,8 @@ input[type="search"]::placeholder {
   position: absolute;
   width: 8px;
   height: 13px;  
-  top: 3px;
-  left: -27px;
+  top: 2px;
+  left: -26px;
   background-image: url("../img/icon-right-small.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
@@ -1854,22 +1856,20 @@ input[type="search"]::placeholder {
   position: absolute;
   width: 8px;
   height: 13px;  
-  top: 3px;
-  left: -21px;
+  top: 2px;
+  left: -22px;
   background-image: url("../img/icon-right-small.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
 }
-.breadcrumbs-current {
-  position: relative;
-}
+
 .breadcrumbs-current::before {
   content: "";
   position: absolute;
   width: 8px;
   height: 13px;  
-  top: 25px;
-  left: -20px;
+  top: 24px;
+  left: -21px;
   background-image: url("../img/icon-right-small.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
@@ -1885,24 +1885,31 @@ input[type="search"]::placeholder {
 .filter-name,
 .sorting-name {
   font-family: "PTSans", Arial, sans-serif;
+  font-weight: normal;
   font-size: 13px;
   line-height: 18px;
   color: #000000;
   margin: 0;
   padding: 0;
 }
-.filter-name {
+.breadcrumbs-current {
+  position: relative;
   text-transform: uppercase;
+  margin-right: 40px;
+  padding-top: 22px;
+  padding-bottom: 22px;
+  padding-left: 3px;
+}
+.filter-name {  
   margin: 0;
-  padding-left: 20px;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-left: 18px;
+  padding-top: 12px;
+  padding-bottom: 8px;
   padding-right: 150px;
   width: 50px;
   
 }
-.breadcrumbs a,
-.breadcrumbs-current {
+.breadcrumbs a {
   text-transform: uppercase;
   margin-right: 40px;
   padding-top: 23px;
@@ -1920,11 +1927,12 @@ input[type="search"]::placeholder {
   font-size: 17px;
   line-height: 18px;
   color: #000000;
-  max-width: 95px;
+  max-width: 93px;
   border: none;
   padding-top: 10px;
   padding-bottom: 10px;
   text-align: center;
+  padding-left: 3px;
   margin-bottom: 17px;
 }
 .price-filter-dash {
@@ -1933,8 +1941,8 @@ input[type="search"]::placeholder {
   line-height: 18px;
   color: #000000;
   text-transform: uppercase;
-  margin-left: 3px;
-  margin-right: 3px;
+  margin-left: 2px;
+  margin-right: 2px;
 }
 .range-controls {
   position: relative;
@@ -2003,8 +2011,8 @@ input[type="search"]::placeholder {
   padding: 0;
 }
 .catalog-filters legend {
-  font-family: "PTSans", Arial, sans-serif;
-  font-weight: bold;
+  font-family: "PTSansBold", Arial, sans-serif;
+/*  font-weight: bold;*/
   font-size: 17px;
   line-height: 30px;
   text-transform: uppercase;
@@ -2026,13 +2034,14 @@ legend.filter-manuf-fieldset {
 legend.filter-feed-fieldset {
   border-top: 1px solid #e5e5e5;
   margin: 0;
-  padding-top: 15px;
+  padding-top: 17px;
   width: 220px;
   
 }
 .catalog-filters ul {
   list-style: none;
   font-family: "PTSans", Arial, sans-serif;
+  font-weight: normal;
   font-size: 15px;
   line-height: 20px;
   color: #000000;
@@ -2043,7 +2052,8 @@ legend.filter-feed-fieldset {
 }
 .filter-option {
   margin-bottom: 20px;
-  padding-left: 35px;
+  padding-left: 33px;
+  
 }
 .filter-checkbox {
   margin-bottom: 0px;
@@ -2062,6 +2072,7 @@ legend.filter-feed-fieldset {
   position: relative;
   cursor: pointer;
   user-select: none;
+  padding-top: 1px;
 }
 
 .filter-field:hover + label,
@@ -2076,7 +2087,7 @@ legend.filter-feed-fieldset {
   position: absolute;
   width: 27px;
   height: 25px;  
-  top: -2px;
+  top: 0;
   left: -35px;
   background-image: url(../img/checkbox-off.svg);
   background-repeat: no-repeat;
@@ -2088,7 +2099,7 @@ legend.filter-feed-fieldset {
   position: absolute;
   width: 27px;
   height: 25px;  
-  top: -2px;
+  top: 0;
   left: -35px;
   background-image: url(../img/checkbox-on.svg);
   background-repeat: no-repeat;
@@ -2139,6 +2150,7 @@ legend.filter-feed-fieldset {
 
 .filters-button {
   font-family: "PTSans", Arial, sans-serif;
+  font-weight: normal;
   font-size: 13px;
   line-height: 18px;
   text-transform: uppercase;
@@ -2146,8 +2158,8 @@ legend.filter-feed-fieldset {
   background-color: #ffffff;
   border: 1px solid #e5e5e5;
   border-radius: 3px;
-  margin-top: 50px;
-  margin-left: 13px;
+  margin-top: 49px;
+  margin-left: 12px;
   padding-top: 10px;
   padding-bottom: 9px;
   width: 140px;
@@ -2171,25 +2183,25 @@ legend.filter-feed-fieldset {
   margin: 0;
   padding: 0;
   list-style: none;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 11px;
+  padding-bottom: 9px;
 }
 .sorting-items {
   font-family: "PTSans", Arial, sans-serif;
+  font-weight: normal;
   font-size: 13px;
   text-transform: uppercase;
   color: #000000;
   opacity: 0.3;
   border-bottom: 1px dotted #ee3643;
   list-style: none;
-  cursor: pointer;
+  cursor: pointer;  
 }
 .sorting-name {
-  text-transform: uppercase;
   margin-right: 140px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 19px;
+  padding-top: 12px;
+  padding-bottom: 8px;
+  padding-left: 18px;
 }
 
 .sorting-items.price {
@@ -2282,7 +2294,7 @@ li.sorting-items {
   list-style: none;
   padding-top: 10px;
   padding-bottom: 10px;
-  margin-top: 55px;
+  margin-top: 50px;
   margin-bottom: 60px;
   
 }
@@ -2299,7 +2311,7 @@ li.sorting-items {
   padding: 0;  
   margin-right: 9px;
   padding-left: 15px;
-  padding-right: 15px;
+  padding-right: 14px;
   padding-top: 10px;
   padding-bottom: 10px;
   border-radius: 3px;
@@ -2308,6 +2320,7 @@ li.sorting-items {
 .pagination-items:nth-child(4) a {
   padding-right: 30px;
   padding-left: 30px;
+  margin-left: 1px;
 }
 .pagination-list a:hover,
 .pagination-list a:focus {
