@@ -672,10 +672,10 @@ input[type="search"]::placeholder {
 }
 .section-button:hover,
 .section-button:focus {
-  background-color: #cccccc;
+  background-color: rgba(0, 0, 0, 0.2);
 }
 .section-button:active {
-  background-color: #b2b2b2;
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
 .menu-containers {
