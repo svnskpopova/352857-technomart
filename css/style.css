@@ -1112,17 +1112,17 @@ input[type="search"]::placeholder {
   order: 4;
   margin: 9px auto;
   margin-bottom: 20px;
-  padding: 9px 37px 10px 37px;
+  padding: 10px 37px 10px 37px;
   border-radius: 3px;  
 }
 .goods-price::after{
   content: "";
   position: absolute;
   top: 0;
-  right: -20px;
+  right: -23px;
   width: 0;
   height: 0;
-  border: 18px solid white;
+  border: 19px solid white;
   border-left-color: #ee3643;
 }
 .goods-price:hover,
