@@ -90,7 +90,7 @@ input[type="radio"].visually-hidden {
   padding: 0 10px;
 }
 .main-header {
-  padding-bottom: 63px;
+  padding-bottom: 64px;
 }
 .user-navigation {
   display: flex;
@@ -141,8 +141,8 @@ input[type="radio"].visually-hidden {
   display: block;
   margin: 0;
   padding: 0;
-  padding-top: 18px;
-  padding-bottom: 20px;
+  padding-top: 19px;
+  padding-bottom: 19px;
   padding-right: 30px;
   vertical-align: center;
   padding-left: 30px;
@@ -731,7 +731,7 @@ input[type="search"]::placeholder {
   padding: 0; 
   max-width: 230px;
   margin-left: 25px;
-  padding-top: 25px;
+  padding-top: 24px;
   margin-bottom: 133px;
   
 }
