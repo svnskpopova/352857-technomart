@@ -1,37 +1,37 @@
 @font-face {
   font-family: "Cuprum";
   src: local("Cuprum"),
-    url("../fonts/web/cuprum.woff2") format("woff2");
+    url("../fonts/cuprum.woff2") format("woff2");
 }
 @font-face {
   font-family: "CuprumBold";
   src: local("CuprumBold"),
-    url("../fonts/web/cuprumbold.woff2") format("woff2");
+    url("../fonts/cuprumbold.woff2") format("woff2");
 }
 @font-face {
   font-family: "CuprumBoldItalic";
   src: local("CuprumBoldItalic"),
-    url("../fonts/web/cuprumbolditalic.woff2") format("woff2");
+    url("../fonts/cuprumbolditalic.woff2") format("woff2");
 }
 @font-face {
   font-family: "CuprumItalic";
   src: local("CuprumItalic"),
-    url("../fonts/web/cuprumitalic.woff2") format("woff2");
+    url("../fonts/cuprumitalic.woff2") format("woff2");
 }
 @font-face {
   font-family: "PTSans";
   src: local("PTSans"),
-    url("../fonts/web/ptsans.woff2") format("woff2");
+    url("../fonts/ptsans.woff2") format("woff2");
 }
 @font-face {
   font-family: "PTSansBold";
   src: local("PTSansBold"),
-    url("../fonts/web/ptsansbold.woff2") format("woff2");
+    url("../fonts/ptsansbold.woff2") format("woff2");
 }
 @font-face {
   font-family: "PTSansBold";
   src: local("PTSansBold"),
-    url("../fonts/web/ptsansbold.woff2") format("woff2");
+    url("../fonts/ptsansbold.woff2") format("woff2");
 }
 body {
   min-width: 960px;
@@ -71,10 +71,7 @@ input[type="radio"].visually-hidden {
 }
 .main-header,
 .main-service {
-  background-color: #f3f7f8;
-  background-image: url(img/background-header.jpg);
-  background-position: top center;
-  background-repeat: repeat;
+  background-color: #f3f7f8;  
 }
 .header-top-wrapper {
    width: 100%;
@@ -134,7 +131,8 @@ input[type="radio"].visually-hidden {
   align-items: center;
   margin: 0;
   padding: 0;   
-  width: 940px;
+/*  width: 940px;*/
+  width: 100%;
   list-style: none;  
 }
 .site-navigation a {
@@ -154,7 +152,8 @@ input[type="radio"].visually-hidden {
   align-items: center;
   font-size: 17px;
   background-color: #293449;
-  width: 940px;
+/*  width: 940px;*/
+  width: 100%;
   margin: 0;
   padding: 0;
 }
@@ -1724,6 +1723,7 @@ input[type="search"]::placeholder {
   padding-top: 44px;  
   border-top: 7px solid #ff5357;
   box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
+  z-index: 30;
 }
 .modal-write-us {
   display: none;
@@ -1791,7 +1791,7 @@ input[type="search"]::placeholder {
   padding-bottom: 9px;
   text-align: center;
   border-radius: 3px;
-
+  cursor: pointer;
 }
 .breadcrumbs {
 /*  position: relative;*/
@@ -2165,6 +2165,7 @@ legend.filter-feed-fieldset {
   padding-bottom: 9px;
   width: 140px;
   text-align: center;
+  cursor: pointer;
 }
 .filters-button:hover,
 .filters-button:focus,
@@ -2226,13 +2227,20 @@ li.sorting-items {
   border-bottom: none;
 }
 
+.sorting-img-up,
+.sorting-img-down {  
+  border: none;
+  background-color: transparent;
+  outline: none;
+}
+
  .sorting-img-up {
   content: "";
   position: absolute;
   width: 11px;
   height: 10px;
-  top: 14px;
-  right: 30px;  
+  top: 12px;
+  right: 35px;  
   margin-right: 20px;  
   cursor: pointer;
 }
@@ -2241,8 +2249,8 @@ li.sorting-items {
   position: absolute;
   width: 11px;
   height: 10px;
-  top: 14px;
-  right: 18px;  
+  top: 12px;
+  right: 22px;  
   cursor: pointer;
 }
 
@@ -2343,6 +2351,7 @@ li.sorting-items {
   border-top: 7px solid #ff5357;
   box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
   background-color: #ffffff;
+  z-index: 30;
 }
 .modal-good-add {
   display: none;
@@ -2448,6 +2457,7 @@ li.sorting-items {
   box-shadow: 0 0 50px rgba(0, 0, 0, 0.7);  
   background-color: transparent;
   border: none;
+  z-index: 30;
 }
 .modal-map p {
   margin: 0;
