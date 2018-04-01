@@ -1120,6 +1120,8 @@ input[type="search"]::placeholder {
   z-index: 20;
 }
 .goods-price {
+  display: inline-block;
+  vertical-align: top;
   position: relative;
   font-family: "PTSansBold", Tahoma, sans-serif;
   font-size: 17px;
@@ -1134,6 +1136,12 @@ input[type="search"]::placeholder {
   margin: 9px auto;
   margin-bottom: 20px;
   padding: 9px 37px 10px 37px;
+/*
+  padding-top: 9px;
+  padding-bottom: 10px;
+*/
+  width: 67px;
+  text-align: center;
   border-radius: 3px;  
 }
 .goods-price::after{
