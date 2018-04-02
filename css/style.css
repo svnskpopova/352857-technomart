@@ -616,12 +616,15 @@ a.main-header-logo:active {
 }
 input[type="search"]::-webkit-input-placeholder { 
   color: #ffffff; 
+  opacity: 1;
 }
 input[type="search"]:-ms-input-placeholder { 
   color: #ffffff; 
+  opacity: 1;
 }
 input[type="search"]::-ms-input-placeholder { 
   color: #ffffff; 
+  opacity: 1;
 }
 input[type="search"]:-moz-placeholder { 
   color: #ffffff; 
@@ -633,6 +636,7 @@ input[type="search"]::-moz-placeholder {
 }
 input[type="search"]::placeholder { 
   color: #ffffff; 
+  opacity: 1;
 } 
 .header-search input:hover + svg {
   opacity: 1;
